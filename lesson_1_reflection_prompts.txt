@@ -7,7 +7,9 @@ How could having easy access to the entire history of a file make you a more
 efficient programmer in the long term?
 
 git log --stat        # Shows all commits (versions) of a document. Including ID, editor and info. The --stat shows how much changes there are for each file changed
-(git diff <commit1> <commit2>)     # Shows the differences between two commits. If the commit includes a repository of differente files, than the differences for each separate file is shown
+(git diff <commit1> <commit2>)     # Shows the differences between two commits. If the commit includes a repository of differente files, than the differences for each separate file is shown. 
+git diff # If there are no arguments given, the difference between the working area and the stage area are shown !
+git diff --staged # Shows the differences that would be commited
 
 # Make one commit per logical change in code
 
@@ -44,8 +46,19 @@ git add <files> # Add files to the "stage area"
 git commit [-m <"message">] # Make a commit including a message (-m not needed if a editor is specified)
 git clone <repository/link>  # Creates a clone of a whole repository
 git config --global color.ui auto # Colored diff output
+git reset --hard # Will remove all changes in the working and staging area
+git branch # Shows actual branches
+git branch <name> # Creates a new branch
+git checkout <branch> # Jump to an other branch (to which version of it?)
+git show # shows differences between commit and its parent
+git branch -d <branch> # Delete a branch
+git merge <branches> # Merges the branches into the actual branch
+git merge --abort # Undo the merge
 
 
+
+# Each commit has a parent. You only can se the log of parent commits
+# There is an origin commit!
 
 # Info
 # You do not have to type in the whole commit ids, 4 letters should be fine..
