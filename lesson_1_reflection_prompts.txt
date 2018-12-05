@@ -1,0 +1,49 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+diff -u <file1> <file2>.  # Shows differences. -u stands for unified output
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+git log --stat        # Shows all commits (versions) of a document. Including ID, editor and info. The --stat shows how much changes there are for each file changed
+(git diff <commit1> <commit2>)     # Shows the differences between two commits. If the commit includes a repository of differente files, than the differences for each separate file is shown
+
+# Make one commit per logical change in code
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+# All commits have a logical change
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+# Saving multiple files together makes sense, if the files are logically connected to each other
+
+How can you use the commands git log and git diff to view the history of files?
+
+    Fill in your answer here
+
+How might using version control make you more confident to make changes that
+could break something?
+
+git checkout
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    Fill in your answer here
+
+
+
+# Commands
+git init # Makes a normal directory a git repository
+git status # ??
+git clone <repository/link>  # Creates a clone of a whole repository
+git config --global color.ui auto # Colored diff output
+
+
+
+# Info
+# You do not have to type in the whole commit ids, 4 letters should be fine..
