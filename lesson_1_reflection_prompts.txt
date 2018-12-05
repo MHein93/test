@@ -40,6 +40,8 @@ Now that you have your workspace set up, what do you want to try using Git for?
 # Commands
 git init # Makes a normal directory a git repository
 git status # ??
+git add <files> # Add files to the "stage area"
+git commit [-m <"message">] # Make a commit including a message (-m not needed if a editor is specified)
 git clone <repository/link>  # Creates a clone of a whole repository
 git config --global color.ui auto # Colored diff output
 
